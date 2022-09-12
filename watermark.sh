@@ -1,7 +1,7 @@
 # Este script crea una imagen conteniendo texto y lo graba en otra imagen, creando así una imagen con una marca de agua (waternark)
 #
 # Este script
-# https://gist.github.com/brockthebear/5c05bfd51199bc82bf29c51fafd42208
+# https://github.com/MuseosAbiertos/watermark
 # 
 # Uso
 # Este ejemplo busca imágenes en la carpeta 'entrada' y guarda los watermarks en la carpera 'salida'
@@ -28,8 +28,8 @@ convert -size 1100x20 xc:#1c1c1c -font IBM-Plex-Mono -pointsize 11 -gravity east
   -fill white -annotate +4+0 'https://repo.museosabiertos.org' \
   watermark.png
 
-## Pega watermark en imágenes de modo recursivo
-for f in $(find . -name '*.tif');
+## Pegar watermark recursivo
+for f in $(find . -name '*.jpg');
   do echo "Converting $f";
   mogrify -path salida -format jpg -gravity southeast -draw \
   "image over 5,5 0,0 'watermark.png'" *.jpg "$f";

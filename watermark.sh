@@ -11,17 +11,10 @@
 # watermark.sh
 # /entrada 
 # /salida
-# 
 #
-# Este comando se debe ejecutar en la carpeta principal que:
-# 1. contenga el o los archivos a convertir
-# 2. tenga subdirectorios que contengan archivos a convertir
-# 3. los dos anteriores
-#
-# Este ejemplo encuentra todos los archivos .tif en la carpeta 'entrada' y los convierte a .jpg en la carpeta 'salida',
+# Este ejemplo encuentra todos los archivos .jpg en la carpeta 'entrada' y los convierte a .jpg en la carpeta 'salida',
 # pero cualquier conversión soportada por ImageMagick podría ser usada aquí.
 # Si no tienes ImageMagick instalado, puedes bajarlo desde aquí (https://imagemagick.org/script/download.php)
-#
 #
 ## Crear watermark
 convert -size 1100x20 xc:#1c1c1c -font IBM-Plex-Mono -pointsize 11 -gravity east \
@@ -35,9 +28,6 @@ for f in $(find . -name '*.jpg');
   "image over 5,5 0,0 'watermark.png'" *.jpg "$f";
 done;
 
-# Manual de Amy Tabb
-# https://amytabb.com/til/photography/2021/01/23/image-magick-watermark/
-#
 # Lista las fonts de Image Magick: 
 # convert -list font > fonts.txt
 # identify -list font | grep -i 'fontname'
@@ -48,3 +38,6 @@ done;
 # Help Fonts
 # https://stackoverflow.com/questions/1392858/with-imagemagick-how-can-you-see-all-available-fonts
 # https://gothick.org.uk/2008/03/14/using-os-x-fonts-in-imagemagick/
+#
+# Bonus: El manual de Amy Tabb
+# https://amytabb.com/til/photography/2021/01/23/image-magick-watermark/

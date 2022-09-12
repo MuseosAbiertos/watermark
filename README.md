@@ -11,4 +11,4 @@ Este script 'bash' crea una imagen a partir de una cadena de texto y posteriorme
 - Guarda tu imagen en la carpeta 'entrada'
 - Ponle permisos de ejecucuón al archivo 'chmod +x watermark'
 - Ejecuta './watermark entrada'
-- - La imagen con watermark se guardará en la carpeta 'salida'
+- La imagen con watermark se guardará en la carpeta 'salida'

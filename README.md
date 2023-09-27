@@ -1,4 +1,4 @@
-# watermark
+# Watermark bash
  
 Este simple script 'bash' crea una imagen a partir de una cadena de texto y posteriormente la graba en otra imagen, creando así una nueva imagen con una marca de agua (watermark).
 

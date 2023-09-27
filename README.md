@@ -1,7 +1,6 @@
 # watermark
  
 Este simple script 'bash' crea una imagen a partir de una cadena de texto y posteriormente la graba en otra imagen, creando así una nueva imagen con una marca de agua (watermark).
-En el futuro crearemos un script Python con más funciones, como imprimir los tags VRA Core o Dublin Core
 
 ## Instrucicones
 - Descarga la carpata completa y conserva la estructura de directorios

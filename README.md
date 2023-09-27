@@ -2,7 +2,7 @@
  
 Este simple script 'bash' crea una imagen a partir de una cadena de texto y posteriormente la graba en otra imagen, creando así una nueva imagen con una marca de agua (watermark).
 
-## Instrucicones
+## Instrucciones
 - Descarga la carpata completa y conserva la estructura de directorios
 - Edita el texto del watermark en 'watermark.sh'
 - Si no tienes ImageMagick instalado, puedes bajarlo desde aquí (https://imagemagick.org/script/download.php)

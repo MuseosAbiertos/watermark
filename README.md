@@ -1,5 +1,18 @@
 # Watermark bash
- 
+
+This simple 'bash' script creates an image from a text string and then saves it to another image, creating a new image with a watermark.
+
+## Instructions
+- Download the complete folder and keep the directory structure.
+- Edit the watermark text in 'watermark.sh'.
+- If you don't have ImageMagick installed, you can download it from here (https://imagemagick.org/script/download.php)
+- Save your image in the 'input' folder
+- Set run permissions to the file 'chmod +x watermark'.
+- Run './watermark entrada'.
+- The watermarked image will be saved in the 'salida' folder.
+
+---
+
 Este simple script 'bash' crea una imagen a partir de una cadena de texto y posteriormente la graba en otra imagen, creando así una nueva imagen con una marca de agua (watermark).
 
 ## Instrucciones
